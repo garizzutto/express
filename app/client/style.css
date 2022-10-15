@@ -1,0 +1,17 @@
+* {
+  margin:0
+}
+
+body {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  margin: auto;
+  width: 100vh;
+}
+
+.hello {
+  background-color: blue;
+  color: white;
+}
