@@ -1,3 +1,4 @@
+'use-strict';
 require('dotenv').config();
 const express = require('express');
 const app = express();
@@ -10,9 +11,9 @@ const HOSTNAME = process.env.CLIENT_HOST;
 const CLIENT_PATH = process.env.CLIENT_PATH;
 
 // Uncomment in case of bodyparser
-app.use(express.json())
+app.use(express.json());
 
-app.use(express.static(__dirname + CLIENT_PATH))
+app.use(express.static(__dirname + CLIENT_PATH));
 
 // Uncomment in case of router
 app.use(router);
